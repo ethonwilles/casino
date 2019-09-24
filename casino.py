@@ -43,6 +43,11 @@ def game(money,choice):
         if player_wallet < 3 or player_wallet - 1 < 3:
             print(f'Sadly your wallet is at ${player_wallet}.00')
             initial_welcome(input("You don't have enough money to continue! How much more money would you like to add? Or enter no to stop playing.: "))
+        elif slot_nums[0] == 7 and slot_nums[1] == 7 and slot_nums[2] == 7:
+            print('Three sevens!! Jackpot! 1000 dollars added to wallet.')
+            player_wallet = player_wallet + 1000
+            print(f'\n Your total wallet amount is ${player_wallet}.00')
+            game(player_wallet, input('Great job! Play Again??: '))
         elif slot_nums[0] == slot_nums[1] and slot_nums[1] == slot_nums[2] and slot_nums[2] == slot_nums[0]:
             print('Three of the same numbers rolled!! 5 dollars added to wallet.')
             player_wallet = player_wallet + 5
