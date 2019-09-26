@@ -11,7 +11,7 @@ def initial_welcome(money):
             Rules:
                 * It costs $3.00 to play.
                 * If your wallet hits zero, the game ends.
-                * If your wallet does not have enough to continue the game, the game ends>
+                * If your wallet does not have enough to continue the game, the game ends
                 * Max Amount of Money that can be entered is $50
             """)
             
